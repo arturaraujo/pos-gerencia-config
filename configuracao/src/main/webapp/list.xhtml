@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:head>
+	<title>Dados em Lista</title>
+</h:head>
+
+<h:body>
+	<p:dataList value="#{bean.livros}" var="livro" type="ordered">
+		<div>
+			<h:outputText value="#{livro}"/>
+		</div>
+	</p:dataList>
+</h:body>
+
+</html>
